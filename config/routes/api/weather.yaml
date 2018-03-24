@@ -1,0 +1,4 @@
+weather.temperature:
+    path: /weather/temperature/{location}
+    methods: [GET]
+    controller: App\Controller\WeatherController:temperature

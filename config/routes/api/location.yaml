@@ -1,0 +1,4 @@
+location.create:
+    path: /location/create
+    methods: [POST]
+    controller: App\Controller\LocationController:create
