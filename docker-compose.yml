@@ -1,0 +1,11 @@
+mysql:
+  build: docker/mysql
+
+php:
+  build: docker/php
+  volumes:
+    - ./:/var/www/
+  ports:
+    - "8080:80"
+  links:
+    - mysql

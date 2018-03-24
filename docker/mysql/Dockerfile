@@ -1,0 +1,6 @@
+FROM mariadb:10
+
+ENV MYSQL_ROOT_PASSWORD=root \
+  MYSQL_DATABASE=sufleris
+
+EXPOSE 3306
