@@ -2,3 +2,6 @@ doctrine:
     dbal:
         driver: "pdo_sqlite"
         url: "sqlite:///%kernel.project_dir%/var/app.db"
+
+        # driver: 'pdo_mysql'
+        # url: 'mysql://root:hello@127.0.0.1:3306/orai'
