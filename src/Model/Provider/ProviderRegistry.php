@@ -14,12 +14,12 @@ class ProviderRegistry
         $this->log = $log;
     }
 
-    public function add(WeatherProviderInterface $weatherProvider) : void
+    public function add(ProviderInterface $weatherProvider) : void
     {
         $this->weatherProvider[] = $weatherProvider;
     }
 
-    public function get(string $name) : WeatherProviderInterface
+    public function get(string $name) : ProviderInterface
     {
         $this->log->info(sprintf('Loading provider by name %s', $name));
         foreach ($this->weatherProvider as $provider) {

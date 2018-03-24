@@ -9,6 +9,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
+use Model\Provider\Apixu;
 
 class AppWeatherCommand extends Command
 {
@@ -27,7 +28,7 @@ class AppWeatherCommand extends Command
             ->setDescription('Gather weather information')
             ->addArgument('location', InputArgument::REQUIRED, 'Location')
             ->addOption('noCache', null, InputOption::VALUE_NONE, 'Disable cache')
-            ->addOption('provider', null, InputOption::VALUE_REQUIRED, 'Provider name', ApixuProvider::NAME)
+            ->addOption('provider', null, InputOption::VALUE_REQUIRED, 'Provider name', Apixu::NAME)
         ;
     }
 
