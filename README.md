@@ -7,9 +7,9 @@
 # Užduotis
 
     - Location įjungimas/išjungimas
-    - Pridėti property location.status
-    - Galimos reikšmės: enabled|disabled
-    - Endpoint: POST /api/v1/location/{id}/toggle
+    +- Pridėti property location.status
+    +- Galimos reikšmės: enabled|disabled
+    +- Endpoint: POST /api/v1/location/{id}/toggle
     - CLI komanda: bin/console location:toggle <id>
     - Testai API endpoint
     - Testai CLI komandai

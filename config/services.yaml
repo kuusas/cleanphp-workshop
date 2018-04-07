@@ -40,8 +40,8 @@ services:
     Model\HttpClientInterface:
         alias: App\Http\Client
 
-    Model\Provider\ProviderRegistry: 
-        calls: 
+    Model\Provider\ProviderRegistry:
+        calls:
             - method: add
               arguments:
                 - '@Model\Provider\Apixu'
@@ -56,9 +56,13 @@ services:
         alias: tactician.commandbus
 
     Model\Weather\GetWeatherHandler:
-        tags: 
+        tags:
             - { name: tactician.handler, typehints: true }
 
     Model\Location\CreateLocationHandler:
-        tags: 
+        tags:
+            - { name: tactician.handler, typehints: true }
+
+    Model\Location\ToggleLocationHandler:
+        tags:
             - { name: tactician.handler, typehints: true }
