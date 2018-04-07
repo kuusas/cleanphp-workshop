@@ -2,3 +2,8 @@ location.create:
     path: /location/create
     methods: [POST]
     controller: App\Controller\LocationController:create
+
+location.toggle:
+    path: /location/{id}/toggle
+    methods: [POST]
+    controller: App\Controller\LocationController:toggle
